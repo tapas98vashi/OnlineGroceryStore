@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>OnlineGrocery</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <header>
+    <app-header></app-header>
+    <marquee>Call us at +91 9429784103 for Home Delivery</marquee>
+  </header>
+  <section>
+    <nav>
+      <h2>
+      <ul style="text-align: center;">
+        <li><a routerLink = 'products'>Products</a></li><br>
+        <li><a routerLink = 'slots'>Time Slots</a></li><br>
+      </ul>
+      </h2>
+    </nav>
+    <article>
+      <router-outlet></router-outlet>
+    </article>
+  </section>
+  <footer>
+    <app-footer></app-footer>
+  </footer>
+
+</body>
+</html>

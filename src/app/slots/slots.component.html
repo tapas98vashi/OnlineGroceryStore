@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+  <h1>Select your Time Slot</h1>
+  <form #myForm="ngForm" (submit)="templateForm(myForm.value)" novalidate>
+    <table>
+      <tr>
+        <td>
+          <div>
+            <input id="slot1" type="radio" value="09:00 am to 10:00 am" name="slot" ngModel>
+            <label class="custom-control-label" for="slot1">09:00 am to 10:00 am</label>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <input id="slot2" type="radio" value="10:00 am to 11:00 am" name="slot" ngModel>
+            <label for="slot2">10:00 am to 11:00 am</label>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <input id="slot3" type="radio" value="11:00 am to 12:00 pm" name="slot" ngModel>
+            <label for="slot3">11:00 am to 12:00 pm</label>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <input id="slot4" type="radio" value="12:00 pm to 01:00 pm" name="slot" ngModel>
+            <label for="slot4">12:00 pm to 01:00 pm</label>
+          </div>
+        </td>
+
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <input id="slot5" type="radio" value="01:00 pm to 02:00 pm" name="slot" ngModel>
+            <label for="slot5">01:00 pm to 02:00 pm</label>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <input id="slot6" type="radio" value="02:00 pm to 03:00 pm" name="slot" ngModel>
+            <label for="slot6">02:00 pm to 03:00 pm</label>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div>
+            <input id="slot7" type="radio" value="03:00 pm to 04:00 pm" name="slot" ngModel>
+            <label for="slot7">03:00 pm to 04:00 pm</label>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div>
+            <input id="slot8" type="radio" value="04:00 pm to 05:00 pm" name="slot" ngModel>
+            <label for="slot8">04:00 pm to 05:00 pm</label>
+          </div>
+        </td>
+      </tr>
+    </table><br>
+    <button type="submit" class="button"> Submit Time Slot</button>
+  </form>
+
+</body>
+
+</html>
